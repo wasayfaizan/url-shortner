@@ -15,33 +15,43 @@
   <body>
     <div class="container">
       <h1>URL Shortner</h1>
-      <form action="" method="post" class="my-4 form-inline">
+      <form action="" method="post" class="form-inline">
         <label for="fullUrl"></label>
         <input
           placeholder="enter the full url"
           type="url"
           name="fullUrl"
           id="fullUrl"
+          class="form-control col mr-2"
+          required
         />
-        <button>Submit</button>
-      </form>
 
-      <table>
-        <thead>
-          <tr>
-            <th>Full URL</th>
-            <th>Short URL</th>
-            <th>No. Of Clicks</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><a href="https://fwfbxdx">https://fwfbxdx</a></td>
-            <td><a href="/123">123</a></td>
-            <td>10</td>
-          </tr>
-        </tbody>
-      </table>
+        <button class="btn btn-primary my-1 align-items-center">Submit</button>
+      </form>
+      <div class="table-responsive">
+        <table
+          class="table table-striped table-dark table-bordered table-hover table-responsive my-5"
+        >
+          <thead>
+            <tr>
+              <th>Full URL</th>
+              <th>Short URL</th>
+              <th>No. Of Clicks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <a href="https://fwfbxdx"
+                  >https://fwfbxdxcondaohabubcofbofgoiucgfbfgcowqbfgcfobry</a
+                >
+              </td>
+              <td><a href="/123">123</a></td>
+              <td>10</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </body>
 </html>
