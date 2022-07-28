@@ -15,7 +15,7 @@
   <body>
     <div class="container">
       <h1>URL Shortner</h1>
-      <form action="" method="post" class="form-inline">
+      <form action="/shortUrls" method="post" class="form-inline">
         <label for="fullUrl"></label>
         <input
           placeholder="enter the full url"
@@ -40,15 +40,19 @@
             </tr>
           </thead>
           <tbody>
+            <% shortUrl.forEach(shortUrl => { %>
             <tr>
               <td>
-                <a href="https://fwfbxdx"
-                  >https://fwfbxdxcondaohabubcofbofgoiucgfbfgcowqbfgcfobry</a
-                >
+                <a href="<%= shortUrl.fullUrl %> "><%= shortUrl.fullUrl %> </a>
               </td>
-              <td><a href="/123">123</a></td>
-              <td>10</td>
+              <td>
+                <a href="<%= shortUrl.shortUrl %> "
+                  ><%= shortUrl.shortUrl %>
+                </a>
+              </td>
+              <td><%= shortUrl.NoOfClicks %></td>
             </tr>
+            <% }) %>
           </tbody>
         </table>
       </div>
